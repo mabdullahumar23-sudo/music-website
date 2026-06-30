@@ -1,0 +1,42 @@
+/* ============================================
+   Ethereal — Responsive
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .hero { grid-template-columns: 1fr; gap: 30px; }
+  .hero-visual { height: 360px; order: -1; }
+  .vinyl { width: 280px; height: 280px; }
+  .mood-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  .nav { padding: 10px 14px; }
+  .nav-links { display: none; }
+  .nav-actions .btn-ghost { display: none; }
+  .stats { gap: 24px; }
+  .stats strong { font-size: 1.3rem; }
+  .section-head.row { flex-direction: column; align-items: flex-start; }
+
+  .player {
+    grid-template-columns: 1fr;
+    gap: 10px; padding: 10px;
+  }
+  .player-left { gap: 10px; }
+  .player-art { width: 44px; height: 44px; font-size: 1.2rem; }
+  .player-right { justify-content: center; }
+  .visualizer { height: 70px; }
+  body { padding-bottom: 200px; }
+}
+
+@media (max-width: 520px) {
+  .mood-grid { grid-template-columns: 1fr; }
+  .track-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; gap: 6px; text-align: center; }
+  .title { font-size: 2.4rem; }
+  .subtitle { font-size: 0.98rem; }
+}
+
+/* Hide cursor glow on touch devices */
+@media (hover: none) { .cursor-glow { display: none; } }
